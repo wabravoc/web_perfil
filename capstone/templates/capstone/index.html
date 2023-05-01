@@ -1,0 +1,234 @@
+{% extends "capstone/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+
+<nav class="menu">
+    <label class="logo">DEVELOPER</label>
+    <ul class="menu_items">
+        <li class="active menu_item" data-url="About">    <a href="#About">   About   </a> </li>
+        <li class="menu_item"        data-url="Skils">    <a href="#Skils">   Skils   </a> </li>
+        <li class="menu_item"        data-url="Services"> <a href="#Services">Services</a> </li>
+        <li class="menu_item"        data-url="Contact">  <a href="#Contact"> Contact </a> </li>
+    </ul>
+    <span class="btn_menu">
+        <i class="bi bi-list"></i>
+    </span>
+</nav>
+
+<main>
+    <section class="seccion p-3 mb-4 " id="About" >
+        
+            <div class ="col font_text ">
+                <h1>WILLIAM BRAVO</h1>
+                <h2 >WEB DEVELOPER</h2>          
+                <h1>Frontend</h1>
+                <h3>Fullstack</h3>
+            </div>
+            <div class="card col">
+                <div class="face front">
+                    <img src="../../static/effects/image/perfil.png" alt="Imagen">
+                    <h3>Profile</h3>
+                </div>
+                <div class="face back">
+                    <h3>Profile</h3>
+                    <p>
+                        Hello! My name is William Bravo I am an electronic and mechatronics engineer 
+                        I am also passionate about web development and one of my biggest hobbies is programming,
+                        I like to learn new applications and look for new tools to give life to my creations
+                    </p>
+                    <a class="btn btn-dark" href="{% url 'CVPDF' %}" target="_blank">CV</a>
+                </div>
+
+            </div>
+        
+    </section>
+
+    <section class="seccion  p-3 mb-4 mt-2 rounded" id="Skils" >
+        <h2 class="h2_skils">Programming Languages</h2>   
+        <h1 class="h1_skils">SKILS</h1>
+        <p class="skils_information"> 
+            Web development, dynamic, interactive environments full of animations to give life to web applications, good management of color palette that will give the best appearance to the end user.
+        </p>
+
+        <div class="services_menu_img">
+
+
+            <div class=" services_btn_img">
+                <div class="services_image card">
+                    <img   src="../../static/effects/image/BOOTSTRAP.png">
+                    <h3 class="skils_title">BOOTSTRAP</h3>
+                </div>
+            </div>
+            
+            <div class=" services_btn_img">
+                <div class="services_image card">
+                    <img   src="../../static/effects/image/HTML.png">
+                    <h3 class="skils_title">HTML</h3>
+                </div>
+            </div>
+            <div class=" services_btn_img">
+                <div class="services_image card">
+                    <img   src="../../static/effects/image/CSS.png">
+                    <h3 class="skils_title">CSS</h3>
+                </div>
+            </div>
+
+            <div class=" services_btn_img">
+                <div class="services_image card">
+                    <img   src="../../static/effects/image/DJANGO.png">
+                    <h3 class="skils_title">DJANGO</h3>
+                </div>
+            </div>
+
+            <div class="services_btn_img">
+                <div class="services_image card">
+                    <img   src="../../static/effects/image/JAVA.png">
+                    <h3 class="skils_title">JAVA</h3>
+                </div>
+            </div>
+
+            <div class=" services_btn_img">
+                <div class="services_image card">
+                    <img   src="../../static/effects/image/PYTHON.png">
+                    <h3 class="skils_title">PYTHON</h3>
+                </div>
+            </div>
+
+            <div class=" services_btn_img">
+                <div class="services_image card">
+                    <img   src="../../static/effects/image/REACT.png">
+                    <h3 class="skils_title">REACT</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="seccion font_text p-3 mb-3 " id="Services" >
+        <h2>Web Developer</h2>   
+        <h1>PROJECTS</h1>
+        <div class="contenedor">    
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(../../static/effects/image/network.png)">
+                        <div class="info">
+                            <h5 ><a href="https://github.com/me50/wabravoc/tree/web50/projects/2020/x/network" target="_blank"> Network</a> <br> <span>Web Developer</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(../../static/effects/image/commerce.png)">
+                        <div class="info">
+                            <h5><a href="https://github.com/me50/wabravoc/tree/web50/projects/2020/x/commerce" target="_blank"> Commerce</a> <br> <span>Web Developer</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(../../static/effects/image/mail.png)">
+                        <div class="info">
+                            <h5><a href="https://github.com/me50/wabravoc/tree/web50/projects/2020/x/mail" target="_blank"> Email</a> <br> <span>Web Developer</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(../../static/effects/image/wiki.png)">
+                        <div class="info">
+                            <h5><a href="https://github.com/me50/wabravoc/tree/web50/projects/2020/x/wiki" target="_blank"> Wiki</a> <br> <span>Web Developer</span></h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(../../static/effects/image/search.png)">
+                        <div class="info">
+                            <h5><a href="https://github.com/me50/wabravoc/tree/web50/projects/2020/x/search" target="_blank"> Search</a> <br> <span>Web Developer</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination mt-3"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="seccion font_text  " id ="Contact"> 
+        <h2>Leave me your details</h2>        
+        <h1>!WRITE ME!</h1>
+        <div class="form-group font_text container_form">
+            <form>
+                {% csrf_token %}
+                <div class="form_imputs">
+                    <input class="form-control" type="text" id="first_name" placeholder="First name">
+                </div>
+                <div class="form_imputs">
+                    <input class="form-control" type="text" id="last_name" placeholder="Last name">
+                </div>
+                <div class="form_imputs">
+                    <input class="form-control" type="number" id="celphone" placeholder="Celphone number">
+                </id>
+                <div class="form_imputs">
+                    <input class="form-control" type="email"  id="email" placeholder="Email">
+                </div>
+                <div class="form_imputs">
+                    <textarea class="form-control" rows="4" type="text" id="message" placeholder="message"></textarea>
+                </div>
+                <div class="btn_container">
+                    <button class="btn btn-cust" type="submit" id="New_contact">SEND</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <div class="rectangle bg-foot skew-left"></div>
+    <div class=" bg-foot" id="footer">
+        <div class="contact_menu_img">
+            <div class="skill_responsive col">
+                <div class="col ">
+                    <a class="btn_img " href="https://wa.me/573193252890?text=Hello%20many%20greetings!%0AI%20need%20to%20contact%20you." target="_blank"><img  class="contact_image card" src="../../static/effects/image/WhatsApp.png"></a>
+                </div>
+                <div class="col " >
+                    <a class="btn_img" href="mailto:wabravoc@unal.edu.co?subject=I%20need%20your%20services&body=Hello!%0A%0AI%20need%20more%20information%20about%20your%20services%20as%20a%20developer."  target="_blank"><img class="contact_image card" src="../../static/effects/image/Gmail.png"></a>
+                </div>
+                <div class="col">
+                    <a class="btn_img" href="https://www.linkedin.com/in/wabravoc/" target="_blank"> <img url="https://www.linkedin.com/in/wabravoc/" class="contact_image card" src="../../static/effects/image/Linkedin.png"></a>
+                </div>
+            </div>
+            <div class="skill_responsive">
+                <h2>Let's keep in touch</h2>
+            </div>
+        </div>
+        
+        <div class="footer-text">
+            <p> Contact me and we can work on the development of your projects.</p>
+        </div>
+    </div>
+
+</main>
+
+        
+
+{% endblock %}
+
+
+
+{% block script %}
+    <script src="{% static 'capstone/desings.js'  %}" rel="stylesheet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const   swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 100,
+            modifier: 5,
+            slideShadows : true,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        });
+    </script>
+    
+
+{% endblock %}
